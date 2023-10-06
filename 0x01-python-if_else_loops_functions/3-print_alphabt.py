@@ -1,4 +1,4 @@
 #!/usr/bin/python3
-for char in range(97, 123):
-    if (char != 101 and char != 113):
-        print("{:c}".format(char), end='')
+for letter in range(97, 123):  # ASCII values for 'a' to 'z'
+    if chr(letter) not in ['e', 'q']:
+        print("{}".format(chr(letter)), end="")
